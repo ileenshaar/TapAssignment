@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  content: url("images/Ileen-Shaar.jpeg");
+  alt: "my Image";
+  border-bottom-left-radius: 45%;
+  box-shadow: -18px 7px 2px -8px #3bbadb;
+  width: 40%;
+  height: auto;
+}
+
+h1 {
+  margin-top: 40px;
+  color: #008aaa;
+}
+
+h1 span {
+  color: #d1884f;
+}
+
+p span {
+  display: none;
+}
+
+.seeMore {
+  background: none;
+  color: #008aaa;
+  border: 0;
+  font-size: medium;
+  padding: 0 0;
+}
+
+.seeMore:hover {
+  cursor: pointer;
+}
+
+.activeBtn {
+  margin-right: 20px;
+  padding: 4px 20px;
+  border-radius: 6px;
+  background: #008aaa;
+  color: white;
+  border: none;
+  box-shadow: 0 3px 5px #3bbadb;
+}
+
+.activeBtn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.seeMyProject {
+  margin-right: 20px;
+  padding: 4px 20px;
+  border-radius: 6px;
+  background: none;
+  color: #008aaa;
+  border: 2px solid #008aaa;
+}
+
+.seeMyProject:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  background-color: #ddddddd6;
+}
+
+.container {
+  width: 60%;
+  padding: 20px;
+  border: 2px solid #3bbadb;
+  background-color: #fff;
+  margin-top: 8%;
+  min-height: 50vh;
+}
+
+.header {
+  overflow: hidden;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a:hover {
+  background-color: #edebeb;
+  color: black;
+}
+
+.header a.active {
+  color: #d1884f;
+}
+
+.header-right {
+  float: right;
+}
+
+.header-right a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 50px;
+  min-height: 50vh;
+}
+
+.personalInfo {
+  width: 50%;
+  max-width: 290px;
+}
+
+.welcome {
+  color: #3bbadb;
+  font-size: large;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+
+  .container {
+    width: 95%;
+  }
+}
+
+.header-right i {
+  margin-right: 5px;
+}

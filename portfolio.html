@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/icons?selected=Material%20Icons%3Ahome%3A"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-right">
+          <a class="active" href="#home">
+            <i class="material-icons"> home </i>
+            Home</a
+          >
+          <a href="#contact">
+            <i class="material-icons"> person </i>
+            About Me</a
+          >
+          <a href="#about">
+            <i class="material-icons"> call </i>
+            Contact Me</a
+          >
+        </div>
+      </div>
+      <div class="content">
+        <div class="personalInfo">
+          <p class="welcome">Welcome to my site</p>
+          <h1>
+            Hi, I'm Ileen, a Front-End
+            <span>Developer.</span>
+          </h1>
+          <p style="margin-top: 40px">
+            An-Najah University graduate student aspiring to be a front-end
+            developer.<span id="more"
+              >Enthusiastic to pick up knowledge and skills from more
+              experienced team members.</span
+            ><button class="seeMore" onclick="myFunction()" id="seeMore">
+              See More..
+            </button>
+          </p>
+          <div style="display: flex; align-items: center; margin-top: 40px">
+            <button class="activeBtn">Hire me!</button>
+            <button class="seeMyProject">See My Project</button>
+          </div>
+        </div>
+        <img />
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  function myFunction() {
+    var more = document.getElementById("more");
+    var btnText = document.getElementById("seeMore");
+    var content = document.getElementById("content");
+
+    if (btnText.innerHTML === "See More..") {
+      btnText.innerHTML = "See less";
+      more.style.display = "inline";
+    } else {
+      more.style.display = "none";
+      btnText.innerHTML = "See More..";
+    }
+  }
+</script>
